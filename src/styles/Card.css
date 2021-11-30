@@ -1,0 +1,48 @@
+.cardImg {
+  border: 2px solid #ffe81f;
+  border-radius: 9px;
+  height: 285px;
+  margin: 10px;
+  width: 175px;
+}
+
+.card {
+  background-color: black;
+  border: 2px solid #ffe81f;
+  border-radius: 25px;
+  margin: 15px;
+  padding: 10px;
+  width: 205px;
+}
+.gameContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  @media (max-width: 750px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 550px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.currScore,
+.bestScore {
+  color: #ffe81f;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.cardText {
+  color: #ffe81f;
+  font-family: "Poller One", cursive;
+  font-size: 16px;
+
+  text-align: center;
+  margin: 9px;
+}
+@media (max-width: 992px) {
+  .gameContainer {
+    grid-template-columns: repeat(2, auto);
+  }
+}
